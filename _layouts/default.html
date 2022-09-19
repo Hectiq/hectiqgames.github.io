@@ -31,6 +31,9 @@
 	<link rel="stylesheet" type="text/css" href="{{ " /assets/css/hero.css" | relative_url }}">
 	<link rel="stylesheet" type="text/css" href="{{ " /assets/css/custom.css" | relative_url }}">
 
+	<!-- SCRIPTS -->
+	<script src="https://www.google.com/recaptcha/api.js"></script>
+
 
 </head>
 
@@ -215,18 +218,10 @@
 												<span id="mce-EMAIL-HELPERTEXT" class="helper_text"></span>
 
 												<div class="input-group-btn">
-
-
 													<button type="submit" class="btn btn-primary form-control">
-
-
 														<i class="ti-arrow-right first"></i>
 														<i class="ti-arrow-right second"></i>
-
-
 													</button>
-
-
 												</div>
 											</div>
 										</div>
@@ -307,7 +302,7 @@
 
 
 							<!-- FORM -->
-							<form id="contact-form" action="assets/php/contact.php" method="post">
+							<form id="contact-form" action="https://api.formcake.com/api/form/70569fc2-4a57-47b9-a7e3-f987bfab3cd5/submission" method="post">
 
 
 								<!-- CONTROL GROUP -->
@@ -355,7 +350,9 @@
 
 
 									<!-- BUTTON -->
-									<button type="submit" class="form-control">
+									<button type="submit" class="form-control g-recaptcha" data-sitekey="6Lf6IyUaAAAAAPTTe__sC4052VzvGcwFlBHeajA0"
+									data-callback='onSubmit'
+									data-action='submit'>
 
 										<i class="ti-arrow-right first"></i>
 										<i class="ti-arrow-right second"></i>
