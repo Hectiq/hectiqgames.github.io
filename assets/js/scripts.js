@@ -421,46 +421,6 @@ $(document).ready(function(){
 
 
 	
-/**	3. AJAX - SUBSCRIBE
- *****************************************************/
-	
-	$('.subscribe-form').submit(function() {
-		
-		  var postdata = $('.subscribe-form').serialize();
-		  
-		  $.ajax({
-			  
-			  type: 'POST',
-			  url: 'assets/php/subscribe.php',
-			  data: postdata,
-			  dataType: 'json',
-			  success: function(json) {
-                  
-                  $('.subscribe-form').removeClass("error").removeClass("error-final");
-				  
-				  if(json.valid === 0) {
-					  
-					  $('.subscribe-form').addClass("error");
-					  $('.subscribe-form input').attr("placeholder", json.message);
-					  $('.subscribe-form input').val('');
-                      
-                      setTimeout(function(){
-                          $('.subscribe-form').addClass("error-final");
-                      }, 1500);
-					  
-				  } else {
-					  
-					  $('.subscribe-form input,.subscribe-form button').val('').prop('disabled', true);
-					  $('.subscribe-form input').attr("placeholder",json.message);
-					  $('.subscribe-form').addClass("success");
-				  }
-			  }
-			  
-			});
-			
-			return false;
-			
-		});
 
 
 	
