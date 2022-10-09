@@ -1,7 +1,13 @@
 
 function onSubmit(token) {
 
-    //add validation here
+    let name = document.forms["contact-form"]["name"].value;
+    let email = document.forms["contact-form"]["email"].value;
+    let message = document.forms["contact-form"]["message"].value;
+    if (name == "" || message == "" || email == "") {
+        alert("Name must be filled out");
+        return false;
+    }
     res = document.getElementById("contact-form").submit();
     cleanContactForm()
 }
