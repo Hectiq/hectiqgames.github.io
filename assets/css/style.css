@@ -213,9 +213,18 @@ a:focus
 #main
 {
     position: fixed;
-
     width: 100%;
     height: 100%;
+}
+
+footer {
+    position: absolute; /* Make the footer absolute */
+    bottom: 0; /* Set the bottom position */
+    width: 100%; /* Take up the full width of the page */
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
 }
 
 #main-container
