@@ -129,7 +129,7 @@
 				
 				// IMAGE PATH / URL
 				
-				var option_hero_background_image_path = [{src:"assets/images/1.jpg"}];
+				var option_hero_background_image_path = [{src:"/assets/images/1.jpg"}];
 				
 
 
