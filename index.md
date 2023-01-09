@@ -1,5 +1,5 @@
 ---
-title: Coming soon
+title: Hectiq - Home
 layout: home
 ---
 
