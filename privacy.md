@@ -1,5 +1,5 @@
 ---
-title: Privacy
+title: Hectiq - Privacy
 layout: empty
 ---
 

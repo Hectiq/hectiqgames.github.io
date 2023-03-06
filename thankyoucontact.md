@@ -1,5 +1,5 @@
 ---
-title: Thank you 
+title: Hectiq - Thank you 
 layout: thankyou
 ---
 
