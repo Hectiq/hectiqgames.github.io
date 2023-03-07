@@ -1,0 +1,31 @@
+<!-- Home Section -->
+<section class="home-section bg-dark-alfa-30 parallax-2" data-background='{{ "/assets/images/artworks/main_artwork.jpg"| relative_url }}' id="home">
+    <div class="js-height-full container">
+        
+        <!-- Hero Content -->
+        <div class="home-content">
+            <div class="home-text">
+                
+                <h1 class="hs-line-8 no-transp font-alt mb-50 mb-xs-30">
+                    <img src='{{ "/assets/images/hectiq_logo.png" | relative_url }}' alt="Girl in a jacket" height="400">
+                </h1>
+                
+                {% include blocks/subscribe_newsletter.html %}
+                
+                <div class="local-scroll">
+                    
+                    {% include blocks/social_links.html social_class=page.social_class  %}
+                </div>
+            </div>
+        </div>
+        <!-- End Hero Content -->
+        
+        <!-- Scroll Down -->
+        <div class="local-scroll">
+            <a href="#about" class="scroll-down"><i class="fa fa-angle-down scroll-down-icon"></i><span class="sr-only">Scroll to the next section</span></a>
+        </div>
+        <!-- End Scroll Down -->
+        
+    </div>
+</section>
+<!-- End Home Section -->

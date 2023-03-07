@@ -1,6 +1,41 @@
 ---
 title: Hectiq - Home
-layout: home
+layout: main
+site_title: "Hectiq - Video Game Studio"
+site_description: "Hectiq - Video Game Studio"
+description_c1: "We are Hectiq, a newly founded video game development studio based in Bordeaux, France."
+description_c2: "Driven by the ambition of making unique and engaging games of various genres, we emphasize creativity, gameplay, and technical innovation. "
+description_c3: "We can’t wait to announce our first project, which will be unveiled later this year. Stay tuned!"
+team_name_3: "Luca Pierabella"
+team_role_3: "Business Direction"
+team_hello_3: "Hi!"
+team_desc_3: ""
+team_photo_3: "assets/images/team/Luca.jpg"
+team_linkedin_4: "https://www.linkedin.com/in/luca-pierabella-93308413/"
+team_name_4: "Romain Grosse"
+team_role_4: "Gameplay/Online programming"
+team_hello_4: "Hello & Welcome!"
+team_desc_4: ""
+team_photo_4: "assets/images/team/Romain.jpg"
+team_linkedin_4: "https://www.linkedin.com/in/romain-grosse-1721ba24a/"
+team_name_2: "Selmar Kok"
+team_role_2: "Technical direction"
+team_hello_2: "Whats Up!"
+team_desc_2: "Always striving for excellence!"
+team_photo_2: "assets/images/team/Selmar.jpg"
+team_linkedin_2: "https://www.linkedin.com/in/selmar-kok-51610627/"
+team_name_1: "Sven Mestas"
+team_role_1: "Creative direction"
+team_hello_1: "Nice to meet!"
+team_desc_1: ""
+team_twitter_1: "https://twitter.com/SvenMes"
+team_photo_1: "assets/images/team/Sven.jpg"
+team_linkedin_1: "https://www.linkedin.com/in/svenmestas/"
+contact_sub: "We are happy to hear from you"
+contact_address_map: "https://goo.gl/maps/yB3s7yxKwZxKCjTL9"
+contact_mail: "contact@hectiq.games"
+social_class: "fm-social-links"
+footer_social_class: "footer-social-links"
 ---
 
 OUR WEBSITE IS COMING SOON
