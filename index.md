@@ -33,7 +33,6 @@ team_photo_1: "assets/images/team/Sven.jpg"
 team_linkedin_1: "https://www.linkedin.com/in/svenmestas/"
 contact_sub: "We are happy to hear from you"
 contact_address_map: "https://goo.gl/maps/yB3s7yxKwZxKCjTL9"
-contact_mail: "contact@hectiq.games"
 social_class: "fm-social-links"
 footer_social_class: "footer-social-links"
 ---
