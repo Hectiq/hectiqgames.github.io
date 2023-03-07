@@ -23,11 +23,24 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
         <link rel="stylesheet" type="text/css" href='{{ "/assets/css/magnific-popup.css" | relative_url }}' />
     </head>
     <body class="appear-animate">
-      <div id="main">
+
+      <!-- Page Loader -->        
+      <div class="page-loader">
+        <div class="loader">Loading...</div>
+    </div>
+    <!-- End Page Loader -->
+
+    <!-- Skip to Content -->
+    <a href="#main" class="btn skip-to-content">Skip to Content</a>
+    <!-- End Skip to Content -->
+    
+    <!-- Page Wrap -->
+    <div class="page" id="top">
   
         {% include header.html %}
         {{ content }}
         {% include footer.html %}
+    </div>
 
           <!-- JS -->
         <script type="text/javascript" src='{{ "/assets/js/jquery.min.js" | relative_url }}'></script>
@@ -52,8 +65,8 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
         <script type="text/javascript" src='{{ "/assets/js/contact-form.js" | relative_url }}'></script>
         <script type="text/javascript" src='{{ "/assets/js/jquery.ajaxchimp.min.js" | relative_url }}'></script>        
         <!--[if lt IE 10]><script type="text/javascript" src='{{ "/assets/js/placeholder.js" | relative_url }}'></script><![endif]-->
-          
-      </div>
+
+      
 
     </body>
 </html>
