@@ -1,0 +1,30 @@
+<!-- Features Section -->
+<section class="small-section">
+    <div class="container relative">
+        
+        <h2 class="section-title font-alt mb-70 mb-sm-40">
+            Our Values
+        </h2>
+        
+        <!-- Features Grid -->
+        <div class="row multi-columns-row alt-features-grid">
+            
+            {% include blocks/value_item.html 
+                title=page.value_title_1 
+                desc=page.value_desc_1 
+            %}
+            {% include blocks/value_item.html 
+                title=page.value_title_2 
+                desc=page.value_desc_2 
+            %}
+            {% include blocks/value_item.html 
+                title=page.value_title_3 
+                desc=page.value_desc_3 
+            %}
+            
+        </div>
+        <!-- End Features Grid -->
+    
+    </div>
+</section>
+<!-- End Features Section -->
