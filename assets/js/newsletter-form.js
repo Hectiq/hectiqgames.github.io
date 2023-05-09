@@ -18,8 +18,7 @@ function onSubmit() {
         return response.json();
       })
       .then((jsonResponse) => {
-        console.log(jsonResponse);
-        alert('Form submitted successfully!');
+        // alert('Form submitted successfully!');
       })
       .catch((error) => {
         console.error('Error:', error);
