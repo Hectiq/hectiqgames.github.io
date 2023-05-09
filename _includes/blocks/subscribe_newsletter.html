@@ -1,4 +1,4 @@
-<form class="form align-center" id="mailchimp">
+<form class="form align-center" id="Newsletter">
     <div class="row">
         <div class="col-lg-10 offset-lg-1 col-xl-8 offset-xl-2">
             
@@ -7,16 +7,22 @@
             </div>
             
             <div class="mb-20">
-                <input placeholder="Enter Your Email" class="newsletter-field form-control input-md round mb-xs-10" type="email" pattern=".{5,100}" required aria-required="true">
-                
-                <button type="submit" aria-controls="subscribe-result" class="btn btn-mod btn-medium btn-round mb-xs-10">
-                    Subscribe
-                </button>
+                    <input id="email" name="EMAIL" placeholder="Enter Your Email" class="newsletter-field form-control input-md round mb-xs-10" type="email" pattern=".{5,100}" required aria-required="true" >
+                <!-- PHANTOM ELEMENT ( HONEYPOT CAPTCHA FOR SECURITY ) -->
+                <!-- <input id="newsletter-name" placeholder="name" type="name" name="name" class="honey" > -->
+                <!-- /PHANTOM ELEMENT ( HONEYPOT CAPTCHA FOR SECURITY ) -->
+                    <button type="submit" id="newsletter-submit" name="newsletter-submit"
+                    aria-controls="subscribe-result" 
+                    class="btn btn-mod btn-medium btn-round mb-xs-10" 
+                    data-sitekey="6Lf6IyUaAAAAAPTTe__sC4052VzvGcwFlBHeajA0"
+                    data-callback='onSubmit'
+                    data-action='submit'>Subscribe
+                    </button>
             </div>
             
-            <div class="form-tip">
+            <!-- <div class="form-tip">
                 <i class="fa fa-info-circle"></i> Please trust us, we will never send you spam
-            </div>
+            </div> -->
             
             <div id="subscribe-result" role="region" aria-live="polite" aria-atomic="true"></div>
             

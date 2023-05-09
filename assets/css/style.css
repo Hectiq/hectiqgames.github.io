@@ -2381,19 +2381,20 @@ a.logo:hover{
 
 .fm-social-links{
     padding: 10px;
-    font-size: 14px;
+    font-size: 18px;
     text-align: center;
 }
 .fm-social-links > a{
+    background-color: rgba(255, 255, 255, 0.3);
     display: inline-block;
     margin: 0 2px;
     width: 34px;
     height: 34px;
     line-height: 34px;
-    border: 1px solid rgba(255,255,255, .15);
+    border: 1px solid rgba(0, 0, 0, 1);
     text-align: center;    
     text-decoration: none;
-    color: #555;
+    color: #151515 !important;
     
     -webkir-border-radius: 50%; 
     -moz-border-radius: 50%; 
@@ -2405,10 +2406,12 @@ a.logo:hover{
     -ms-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000); 
     transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
 }
+
 .fm-social-links > a:hover{
     border-color: rgba(255,255,255, .3);
     color: #999;
 }
+
 
 
 /* ==============================
@@ -3949,6 +3952,26 @@ a.logo:hover{
 }
 .form input.newsletter-field:focus:-ms-input-placeholder{
     color: #111;
+}
+
+/* Custom HECTIQ */
+/* honeypot fields */
+.honey {
+    clip-path: polygon(0 0, 0 0, 0 0, 0 0) !important;
+	display: none !important;
+	opacity: 0 !important;
+	pointer-events: none !important;
+    position: absolute !important;
+    width: 0 !important;
+    height: 0 !important;
+    overflow: hidden !important;
+    visibility: hidden !important;
+}
+
+.align-newsletter {
+    display: flex !important;
+    align-items: center !important;
+    flex-wrap: nowrap !important;
 }
 
 

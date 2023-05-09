@@ -1,132 +1,36 @@
 ---
-layout: empty
+layout: default
 ---
-
-
-
-<div id="main">
-	
-  
-	<!-- HERO -->
-	<section id="hero" class="hero hero-1">
-	  <!-- FRONT CONTENT -->
-	  <div class="front-content page-enter-animated">
-		<!-- CONTAINER MID -->
-		<div class="container-mid">
-		<a href="{{ site.url }}"> 
-			<img class="logo" src="{{ "/assets/images/hectiq_logo.png" | relative_url }}" alt="hectiq_logo" />
-		</a>
-  
-		  {{ content }}
-  
-  
-		  <p></p>
-		  <!-- OPEN OVERLAY BUTTON -->
-		  <div class="arrow-wrap go-down">
-			<!-- OPEN OVERLAY BUTTON INNER -->
-			<div class="open-overlay down-button">
-			  <i class="ti-arrow-down"></i>
-			  <i class="ti-arrow-down"></i>
-			</div>
-			<!-- /OPEN OVERLAY BUTTON INNER -->
-		  </div>
-		  <!-- /OPEN OVERLAY BUTTON -->
-		</div>
-		<!-- /CONTAINER MID -->
-	  </div>
-	  <!-- /FRONT CONTENT -->
-  
-	  <!-- BACKGROUND CONTENT -->
-	  <div class="background-content page-enter-animated">
-		<!-- LEVEL 1 -->
-		<div class="level-1">
-		  <div class="bg-overlay"></div>
-		  <div class="bg-pattern"></div>
-		  <div id="canvas"><canvas class="bg-effect layer" data-depth="0.2"></canvas></div>
-		</div>
-		<!-- /LEVEL 1 -->
-  
-		<!-- LEVEL 2 -->
-		<div class="level-2">
-		  <div class="bg-image layer" data-depth="0.04"></div>
-		  <div class="bg-video layer" data-depth="0.04"></div>
-		  <div class="bg-color layer" data-depth="0.04"></div>
-		</div>
-		<!-- /LEVEL 2 -->
-	  </div>
-	  <!-- /BACKGROUND CONTENT -->
-	</section>
-	<!-- /HERO -->
-  
-	<!-- OVERLAY CONTAINER -->
-	<div id="overlay">
-	  <!-- OVERLAY-2 -->
-	  <section class="overlay">
-		<!-- CONTENT -->
-		<div id="contact" class="content">
-		  <!-- CONTAINER MID -->
-		  <div class="container-mid">
-			<!-- CONTAINER -->
-			<div class="container">
-			  <h1>Contact</h1>
-  
-			  <p>Want to say hello? Want to know more about us? Drop us an email and we will get back to you as soon as we can.</p>
-  
-			  <!-- FORM -->
-			  <form id="contact-form" action="https://api.formcake.com/api/form/70569fc2-4a57-47b9-a7e3-f987bfab3cd5/submission" method="post">
-				<!-- CONTROL GROUP -->
-				<div class="control-group">
-				  <label class="nameLabel">Name</label>
-				  <input id="contact-form-name" type="text" name="name" class="form-control" required/>
-				</div>
-				<!-- /CONTROL GROUP -->
-  
-				<!-- CONTROL GROUP -->
-				<div class="control-group">
-				  <label class="emailLabel">Email</label>
-				  <input id="contact-form-email" type="text" name="email" class="form-control" required />
-				</div>
-				<!-- /CONTROL GROUP -->
-  
-				<!-- PHANTOM ELEMENT ( HONEYPOT CAPTCHA FOR SECURITY ) -->
-				<div class="control-group fhp-input">
-				  <label class="phoneLabel">Phone</label>
-				  <input id="contact-form-phone" type="phone" name="phone" class="form-control" />
-				</div>
-				<!-- /PHANTOM ELEMENT ( HONEYPOT CAPTCHA FOR SECURITY ) -->
-  
-				<!-- CONTROL GROUP -->
-				<div class="control-group">
-				  <label class="messageLabel">Message</label>
-				  <textarea id="contact-form-message" name="message" class="form-control" required></textarea>
-				</div>
-				<!-- /CONTROL GROUP -->
-  
-				<!-- CONTROL GROUP -->
-				<div class="control-group">
-				  <!-- BUTTON -->
-				  <button type="submit" class="form-control g-recaptcha" data-sitekey="6Lf6IyUaAAAAAPTTe__sC4052VzvGcwFlBHeajA0" data-callback="onSubmit" data-action="submit">
-					<i class="ti-arrow-right first"></i>
-					<i class="ti-arrow-right second"></i>
-				  </button>
-				  <!-- /BUTTON -->
-				</div>
-				<!-- /CONTROL GROUP -->
-			  </form>
-			  <!-- /FORM -->
-			</div>
-			<!-- /CONTAINER -->
-		  </div>
-		  <!-- /CONTAINER MID -->
-		</div>
-		<!-- /CONTENT -->
-	  </section>
-	  <!-- /OVERLAY-2 -->
-  
-	  <!-- OVERLAY BACK BUTTON -->
-	  <div class="up-button go-up"><i class="ti-arrow-up"></i><i class="ti-arrow-up"></i></div>
-	  <!-- /OVERLAY BACK BUTTON -->
-	</div>
-	<!-- /OVERLAY CONTAINER -->
-  </div>
-  
+        
+        
+<!-- Home Section -->
+<section class="home-section bg-dark-alfa-50 parallax-2" data-background='{{ "/assets/images/artworks/hectiq_main_artwork.jpg"| relative_url }}'>
+    <div class="js-height-full">
+        
+        <!-- Hero Content -->
+        <div class="home-content container">
+            <div class="home-text">
+                <div class="hs-cont">
+                    
+                    <!-- Headings -->
+                    <div class="hs-wrap">
+                        
+                        <div class="hs-line-4 font-alt mb-40">
+                            {{content}}
+                        </div>
+                        
+                        <div class="local-scroll">                                        
+                            <a href="index.html" class="btn btn-mod btn-w btn-round btn-small"><i class="fa fa-angle-left"></i> Back To Home Page</a>                                        
+                        </div>
+                        
+                    </div>
+                    <!-- End Headings -->
+                    
+                </div>
+            </div>
+        </div>
+        <!-- End Hero Content -->
+        
+    </div>
+</section>
+<!-- End Home Section -->
