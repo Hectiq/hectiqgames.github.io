@@ -12,4 +12,3 @@ This website uses Microsoft Clarity. This happens only if you approve third part
 
 #### Formcake
 All forms on this website are handled by Formcake. Formcake has a mail server that mails all form contents to us. If you are uncomfortable with using this third party service, please do not fill out forms on this website.
-

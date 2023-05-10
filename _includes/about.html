@@ -1,0 +1,75 @@
+<!-- About Section -->
+<section class="small-section" id="about">
+    <div class="container relative">
+                
+        <h2 class="section-title font-alt  mb-70 mb-sm-40">
+            About Us
+        </h2>
+        
+        <div class="section-text mb-50 mb-sm-20">
+            <div class="row">
+
+                <div class="col-md-4">
+                    {{ page.description_c1 }} 
+                </div>
+                
+                <div class="col-md-4 col-sm-6 mb-sm-50 mb-xs-30">
+                    {{ page.description_c2 }} 
+                </div>
+                
+                <div class="col-md-4 col-sm-6 mb-sm-50 mb-xs-30">
+                    {{ page.description_c3 }} 
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="row">
+            
+            {% include blocks/team_item.html 
+                name=page.team_name_1 
+                desc=page.team_desc_1 
+                role=page.team_role_1
+                linkedin=page.team_linkedin_1
+                photo=page.team_photo_1
+                photo_alt=page.team_name_1
+                hello=page.team_hello_1
+                twitter=page.team_twitter_1
+            %}
+
+            {% include blocks/team_item.html 
+                name=page.team_name_2 
+                desc=page.team_desc_2 
+                role=page.team_role_2
+                linkedin=page.team_linkedin_2
+                photo=page.team_photo_2
+                photo_alt=page.team_name_2
+                hello=page.team_hello_2 
+            %}
+
+            {% include blocks/team_item.html 
+                name=page.team_name_3 
+                desc=page.team_desc_3 
+                role=page.team_role_3
+                linkedin=page.team_linkedin_3
+                photo=page.team_photo_3
+                photo_alt=page.team_name_3
+                hello=page.team_hello_3 
+            %}
+            
+            {% include blocks/team_item.html 
+                name=page.team_name_4 
+                desc=page.team_desc_4 
+                role=page.team_role_4
+                linkedin=page.team_linkedin_4
+                photo=page.team_photo_4
+                photo_alt=page.team_name_4
+                hello=page.team_hello_4 
+            %}
+            
+        </div>
+        
+        
+    </div>
+</section>
+<!-- End About Section -->

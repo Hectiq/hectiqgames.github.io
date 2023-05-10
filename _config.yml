@@ -25,3 +25,13 @@ kramdown:
 name: Hectiq
 website: https://www.hectiq.games
 basewebsite: /
+
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
+  - package.json
+  - original_www/
+  - old_assets/

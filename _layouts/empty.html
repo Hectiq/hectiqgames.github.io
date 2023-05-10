@@ -1,45 +1,34 @@
 ---
 layout: default
 ---
-
-<div id="main">
-  
-	{% include /blocks/loading.html %}
-	<!-- HERO -->
-	<section id="hero" class="hero hero-1">
-	  <!-- FRONT CONTENT -->
-	  <div class="front-content page-enter-animated">
-		<!-- CONTAINER MID -->
-		<div class="container-mid">
-		<a href="{{ site.url }}"> 
-			<img class="logo" src="{{ "/assets/images/hectiq_logo.png" | relative_url }}" alt="hectiq_logo" />
-		</a>
-		  {{ content }}
-  
-  
-		  <p></p>
-		</div>
-		<!-- /CONTAINER MID -->
-	  </div>
-	  <!-- /FRONT CONTENT -->
-	 <!-- BACKGROUND CONTENT -->
-	 <div class="background-content page-enter-animated">
-		<!-- LEVEL 1 -->
-		<div class="level-1">
-		  <div class="bg-overlay"></div>
-		  <div class="bg-pattern"></div>
-		  <div id="canvas"><canvas class="bg-effect layer" data-depth="0.2"></canvas></div>
-		</div>
-		<!-- /LEVEL 1 -->
-  
-		<!-- LEVEL 2 -->
-		<div class="level-2">
-		  <div class="bg-image layer" data-depth="0.04"></div>
-		  <div class="bg-video layer" data-depth="0.04"></div>
-		  <div class="bg-color layer" data-depth="0.04"></div>
-		</div>
-		<!-- /LEVEL 2 -->
-	  </div>
-	  <!-- /BACKGROUND CONTENT -->
-	</section>
-</div>
+<!-- Home Section -->
+<section class="home-section bg-dark-alfa-90 parallax-2" data-background='{{ "/assets/images/artworks/hectiq_main_artwork.jpg"| relative_url }}'>
+    <div class="js-height-full">
+        
+        <!-- Hero Content -->
+        <div class="home-content container">
+            <div class="home-text">
+                <div class="hs-cont">
+                    
+                    <!-- Headings -->
+                    <!-- <div class="hs-wrap"> -->
+                        
+                        <div class="hs-line-4 font-alt mb-40">
+                            {{ content }}
+                        </div>
+                        
+                        <div class="local-scroll">                                        
+                            <a href="index.html" class="btn btn-mod btn-w btn-round btn-small"><i class="fa fa-angle-left"></i> Back To Home Page</a>                                        
+                        </div>
+                        
+                    <!-- </div> -->
+                    <!-- End Headings -->
+                    
+                </div>
+            </div>
+        </div>
+        <!-- End Hero Content -->
+        
+    </div>
+</section>
+<!-- End Home Section -->

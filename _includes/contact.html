@@ -1,0 +1,144 @@
+<!-- Contact Section -->
+<section class="page-section" id="contact">
+    <div class="container relative">
+        
+        <h2 class="section-title font-alt mb-70 mb-sm-40">
+            Contact
+        </h2>
+        
+        <div class="row mb-60 mb-xs-40">
+            
+            <div class="col-lg-10 offset-lg-1 col-xl-8 offset-xl-2">
+                <div class="row">
+                    
+                    {% if page.contact_phone %}
+                    <!-- Phone -->
+                    <div class="col-sm-6 col-lg-4 pt-20 pb-20 pb-xs-0">
+                        <div class="contact-item">
+                            <div class="ci-icon">
+                                <i class="fa fa-phone"></i>
+                            </div>
+                            <div class="ci-title font-alt">
+                                Call Us
+                            </div>
+                            <div class="ci-text">
+                                {{ page.contact_phone }} 
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Phone -->
+                    {% endif %}
+                    
+                    {% if page.contact_address %}
+                    <!-- Address -->
+                    <div class="col-sm-6 col-lg-4 pt-20 pb-20 pb-xs-0">
+                        <div class="contact-item">
+                            <div class="ci-icon">
+                                <i class="fa fa-map-marker"></i>
+                            </div>
+                            <div class="ci-title font-alt">
+                                Address
+                            </div>
+                            <div class="ci-text">
+                                {{ page.contact_address }} 
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Address -->
+                    {% endif %}
+                    
+                    {% if page.contact_mail %}
+                    <!-- Email -->
+                    <div class="col-sm-6 col-lg-4 pt-20 pb-20 pb-xs-0">
+                        <div class="contact-item">
+                            <div class="ci-icon">
+                                <i class="fa fa-envelope"></i>
+                            </div>
+                            <div class="ci-title font-alt">
+                                Email
+                            </div>
+                            <div class="ci-text">
+                                <a href="mailto:support@bestlooker.pro">{{ page.contact_mail }} </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Email -->
+                    {% endif %}
+                    
+                </div>
+            </div>
+            
+        </div>
+        
+        <!-- Contact Form -->                            
+        <div class="row">
+            <div class="col-lg-10 offset-lg-1 col-xl-8 offset-xl-2">
+                
+                <form class="form contact-form" id="contact_form">
+                    <div class="clearfix">
+                        
+                        <div class="cf-left-col">
+                            
+                            <!-- Name -->
+                            <div class="form-group">
+                                <input type="text" name="name" id="name" class="input-md round form-control" placeholder="Name" pattern=".{3,100}" required aria-required="true">
+                            </div>
+                            
+                            <!-- Email -->
+                            <div class="form-group">
+                                <input type="email" name="email" id="email" class="input-md round form-control" placeholder="Email" pattern=".{5,100}" required aria-required="true">
+                            </div>
+
+                            <!-- PHANTOM ELEMENT ( HONEYPOT CAPTCHA FOR SECURITY ) -->
+                            <div class="form-group honey">
+                                <input id="phone" type="phone" name="phone" placeholder="phone"/>
+                            </div>
+                            <!-- /PHANTOM ELEMENT ( HONEYPOT CAPTCHA FOR SECURITY ) -->
+                            
+                        </div>
+                        
+                        <div class="cf-right-col">
+                            
+                            <!-- Message -->
+                            <div class="form-group">                                            
+                                <textarea name="message" id="message" class="input-md round form-control" style="height: 88px;" placeholder="Message"></textarea>
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="clearfix">
+                        
+                        <div class="cf-left-col">
+                            
+                            <!-- Inform Tip -->                                        
+                            <div class="form-tip pt-20">
+                                <i class="fa fa-info-circle"></i> All the fields are required
+                            </div>
+                            
+                        </div>
+                        
+                        <div class="cf-right-col">
+                            
+                            <!-- Send Button -->
+                            <div class="align-right pt-10">
+                                <button class="submit_btn btn btn-mod btn-medium btn-round" id="submit_btn" aria-controls="result">Submit Message</button>
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                    
+                    
+                    
+                    <div id="result" role="region" aria-live="polite" aria-atomic="true"></div>
+                </form>
+                
+            </div>
+        </div>
+        <!-- End Contact Form -->
+        
+    </div>
+</section>
+<!-- End Contact Section -->
