@@ -23,6 +23,7 @@ kramdown:
   input: GFM
   
 name: Hectiq
+title: Hectiq
 website: https://www.hectiq.games
 basewebsite: /
 
