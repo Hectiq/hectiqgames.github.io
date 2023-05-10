@@ -42,7 +42,7 @@ value_title_2: "Teamwork"
 value_desc_2: "Our studio is built on collaboration, not individual achievement.<br />Effective communication is essential to our success, and we maintain a culture of mutual respect and understanding, communicating in multiple languages as necessary (multicultural team!)."
 value_title_3: "Work-life Balance"
 value_desc_3: "We prioritize the well-being of our team members and believe that creativity and teamwork flourish when everyone has a good balance between work and personal life.<br />
-Having a rested mind and a healthy work environment are crucial for our overall well-being, productivity, and creativity"
+Having a rested mind and a healthy work environment are crucial for our overall well-being, productivity, and creativity."
 ---
 
 OUR WEBSITE IS COMING SOON
