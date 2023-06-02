@@ -3,9 +3,14 @@ function onSubmit(token) {
     const form = document.getElementById('Newsletter');
     const formData = new FormData(form);
     const data = Object.fromEntries(formData.entries());
-
-    if (!data.email) {
+    // todo
+    // move those notifications to another notification type ex. toastr.min.js
+    if (!data.EMAIL) {
       alert('Please enter your email address.');
+      return;
+    }
+    if (!isValidEmail(data.EMAIL)) {
+      alert('Please enter a valid email address.');
       return;
     }
   
@@ -30,6 +35,16 @@ function onSubmit(token) {
         console.error('Error:', error);
         alert('Failed to submit the form. Please try again.');
       });
+  }
+
+  function isValidEmail(input) {
+    // Regular expression pattern to match email format
+    var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    
+    // Test the input against the pattern
+    var isValid = emailPattern.test(input);
+    
+    return isValid;
   }
   
   
