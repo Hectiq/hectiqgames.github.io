@@ -9,13 +9,14 @@
             <div class="mb-20">
                     <input id="email" name="EMAIL" placeholder="Enter Your Email" class="newsletter-field form-control input-md round mb-xs-10" type="email" pattern=".{5,100}" required aria-required="true" >
                 <!-- PHANTOM ELEMENT ( HONEYPOT CAPTCHA FOR SECURITY ) -->
-                <!-- <input id="newsletter-name" placeholder="name" type="name" name="name" class="honey" > -->
+                
+                <input id="name" placeholder="name" type="name" name="name" class="honey">
                 <!-- /PHANTOM ELEMENT ( HONEYPOT CAPTCHA FOR SECURITY ) -->
                     <button type="submit" id="newsletter-submit" name="newsletter-submit"
                     aria-controls="subscribe-result" 
-                    class="btn btn-mod btn-medium btn-round mb-xs-10" 
+                    class="btn btn-mod btn-medium btn-round mb-xs-10 g-recaptcha" 
                     data-sitekey="6Lf6IyUaAAAAAPTTe__sC4052VzvGcwFlBHeajA0"
-                    data-callback='onSubmit'
+                    data-callback="onSubmit"
                     data-action='submit'>Subscribe
                     </button>
             </div>

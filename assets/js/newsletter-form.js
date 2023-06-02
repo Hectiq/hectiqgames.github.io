@@ -1,7 +1,13 @@
-function onSubmit() {
+function onSubmit(token) {
+    console.log('Form submission handler invoked');
     const form = document.getElementById('Newsletter');
     const formData = new FormData(form);
     const data = Object.fromEntries(formData.entries());
+
+    if (!data.email) {
+      alert('Please enter your email address.');
+      return;
+    }
   
     fetch('https://api.formcake.com/api/form/7c7c74a6-8f06-4549-b911-f12145876d41/submission', {
       method: 'POST',
@@ -18,7 +24,7 @@ function onSubmit() {
         return response.json();
       })
       .then((jsonResponse) => {
-        // alert('Form submitted successfully!');
+        alert('Form submitted successfully!');
       })
       .catch((error) => {
         console.error('Error:', error);
