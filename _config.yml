@@ -28,6 +28,11 @@ website: https://www.hectiq.games
 basewebsite: /
 
 
+collections:
+  job_offers:
+    output: true
+
+
 exclude:
   - Gemfile
   - Gemfile.lock
