@@ -34,5 +34,5 @@ exclude:
   - LICENSE
   - README.md
   - package.json
-  - original_www/
+  - original_theme/
   - old_assets/
