@@ -41,3 +41,4 @@ exclude:
   - package.json
   - original_theme/
   - old_assets/
+  - _job_offers/template/
