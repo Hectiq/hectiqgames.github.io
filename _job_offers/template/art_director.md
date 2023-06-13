@@ -1,9 +1,9 @@
 ---
-title: Hectiq - Carrers - Art Director
+title: Hectiq - Careers - Art Director
 layout: job_offer
 job_title: Art Director / Senior Polyvalent Game Artist
 job_subtitle: Be a pillar of Hectiq launch 
-job_logo_url: /assets/images/carrers/hectiq_job_logo_1.png
+job_logo_url: /assets/images/careers/hectiq_job_logo_1.png
 job_logo_desc: job logo description
 ---
 
