@@ -1,11 +1,17 @@
 
       
 <!-- Navigation panel -->
+{% if page.layout=="job_offer" %}
+<nav class="main-nav dark">
+{% else if page.layout=="carrers" %}
+<nav class="main-nav dark stick-fixed">
+{% else %}
 <nav class="main-nav dark transparent stick-fixed">
+{% endif %}
     <div class="full-wrapper relative clearfix">
         <!-- Logo ( * your text or image into link tag *) -->
         <div class="nav-logo-wrap local-scroll">
-            <a href="#top" class="logo">
+            <a href="{{ site.baseurl }}/#top" class="logo">
                 <img src='{{ "/assets/images/hectiq_logo.png"| relative_url }}' alt="Hectiq logo" />
             </a>
         </div>
@@ -16,9 +22,10 @@
         <!-- Main Menu -->
         <div class="inner-nav desktop-nav">
             <ul class="clearlist scroll-nav local-scroll">
-                <li class="active"><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li class="active"><a href="{{ site.baseurl }}/#home">Home</a></li>
+                <li><a href="{{ site.baseurl }}/carrers">Carrers</a></li>
+                <li><a href="{{ site.baseurl }}/#about">About</a></li>
+                <li><a href="{{ site.baseurl }}/#contact">Contact</a></li>
             </ul>
         </div>
     </div>

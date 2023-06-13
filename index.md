@@ -33,8 +33,6 @@ team_photo_1: "assets/images/team/Sven.jpg"
 team_linkedin_1: "https://www.linkedin.com/in/svenmestas/"
 contact_sub: "We are happy to hear from you"
 contact_address_map: "https://goo.gl/maps/yB3s7yxKwZxKCjTL9"
-social_class: "fm-social-links"
-footer_social_class: "footer-social-links"
 value_title_1: "Creativity"
 value_desc_1: "We encourage all team members to participate in the creative process.<br />
 Creativity is not just about generating ideas, but also about resourcefulness and problem-solving through innovative thinking."

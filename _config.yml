@@ -28,11 +28,17 @@ website: https://www.hectiq.games
 basewebsite: /
 
 
+collections:
+  job_offers:
+    output: true
+
+
 exclude:
   - Gemfile
   - Gemfile.lock
   - LICENSE
   - README.md
   - package.json
-  - original_www/
+  - original_theme/
   - old_assets/
+  - _job_offers/template/

@@ -1,0 +1,97 @@
+---
+layout: default
+
+---
+
+
+<!-- Home Section -->
+<section class="page-section bg-dark bg-dark-alfa-50" data-background='{{ "/assets/images/artworks/hectiq_main_artwork.jpg"| relative_url }}' id="home">
+    <div class="relative container">
+        
+        <!-- Hero Content -->
+        <div class="home-content">
+            <div class="home-text">
+                
+                <h1 class="hs-line-14 font-alt mb-0">
+                    Join Our Team!
+                </h1>
+                
+            </div>
+        </div>
+        <!-- End Hero Content -->
+        
+    </div>
+</section>
+
+
+<section class="small-section" id="carrers-list">
+    <div class="container relative">                    
+            
+        <!-- Row -->
+        <div class="row">
+            <!-- Col -->
+            <div class="col-lg-8 offset-lg-2 ">
+                <div class="tab-content section-text">
+                    <div role="tabpanel" class="tab-pane fade show active" id="mini-one">
+                        
+                        <table class="table table-hover">
+                            
+                            <thead>
+                                <tr>
+                                    <th>
+                                        Open positions:
+                                    </th>
+                                    <th style="width:20%;">
+                                    </th>
+                                </tr>
+                            </thead>
+                            
+                            <tbody>
+
+                                {% for job_offer in site.job_offers %}
+                                {% include blocks/job_item_list.html 
+                                    title=job_offer.job_title
+                                    link=job_offer.url
+                                    logo_description=job_offer.job_logo_desc 
+                                    logo_url=job_offer.job_logo_url %}
+                                {% endfor %}
+                                
+                            </tbody>
+                        </table>
+                        
+                        
+                    </div>
+                    
+                </div>
+
+                            
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Divider -->
+<!-- <hr class="mt-0 mb-0" /> -->
+<!-- End Divider -->
+
+
+<!-- Call Action Section -->
+<section class="small-section light-content">
+    <div class="container relative">
+        <div class="row wow fadeInUpShort">
+            <div class="col-md-8 offset-md-2 text-center">
+                <h3 class="call-action-1-heading">Stay Connected for Future Opportunities</h3>
+                <div class="call-action-1-decription mb-60 mb-sm-30">
+                    Thank you for your interest in joining our team at Hectiq. 
+                    While we don't have any other open positions currently, we'd love to hear from you and keep your information for future opportunities.
+                </div>                                        
+            
+                <div class="local-scroll">
+                    <a href="mailto:jobs@hectiq.games?subject=Offer Speculative:" title="Mail" target="_blank" class="btn btn-mod btn-w btn-large btn-round">Let's talk</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Call Action Section -->
+                

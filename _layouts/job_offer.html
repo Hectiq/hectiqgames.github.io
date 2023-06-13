@@ -1,0 +1,44 @@
+---
+layout: default
+---
+
+
+
+<!-- <main id="main"> -->
+            
+    <!-- Head Section -->
+    <section class="small-section bg-gray-lighter">
+        <div class="relative container align-left">
+            
+            <div class="row">
+                
+                <div class="col-md-8">
+                    <h1 class="hs-line-11 no-transp font-alt mb-20 mb-xs-0">{{ page.job_title }} </h1>
+                    <div class="hs-line-4 font-alt black">
+                        {{ page.job_subtitle }} 
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <!-- End Head Section -->
+
+    <section class="page-section" id="job_offer_content">
+        <div class="container relative">
+            <div class="section-text mb-60 mb-sm-40">
+
+                
+                <div class="row">
+
+                    {{ content }}                    
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="align-center">
+            <a href="mailto:jobs@hectiq.games?subject=Offer {{page.job_title}}:" title="Mail" target="_blank" class="btn btn-mod btn-large btn-round">Let's talk</a>
+
+        </div>
+    </section>
