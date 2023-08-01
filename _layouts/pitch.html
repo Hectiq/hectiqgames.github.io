@@ -3,12 +3,28 @@ layout: default
 ---
 
 <!-- Home Section -->
+<!-- <section class="home-section bg-dark-alfa-50 parallax-2">
+    <div class="js-height-full"> -->
+        
+        <!-- Hero Content -->
+        <!-- <div class="home-content">
+            <object data='{{ "/assets/pdfs/PingosPitchDeck_V1.4.pdf" | relative_url }}'  type="application/pdf"></object>
+        </div> -->
+        <!-- End Hero Content -->
+        
+    <!-- </div>
+</section> -->
+<!-- End Home Section -->
+<!-- Home Section -->
 <section class="home-section bg-dark-alfa-50 parallax-2">
     <div class="js-height-full">
         
         <!-- Hero Content -->
         <div class="home-content">
-            <object data='{{ "/assets/pdfs/PingosPitchDeck_V1.4.pdf" | relative_url }}'style="padding-top:4%; width:100%;height:100%"  type="application/pdf"></object>
+            <embed src='{{ "/assets/pdfs/PingosPitchDeck_V1.4.pdf" | relative_url }}' type="application/pdf" style="padding-top:4%; width:1920px;height:1080px">
+            <!-- Fallback link for non-PDF supported browsers -->
+            <p>If you can't view the PDF, you can <a href='{{ "/assets/pdfs/PingosPitchDeck_V1.4.pdf" | relative_url }}'>download it here</a>.</p>
+            </embed>
         </div>
         <!-- End Hero Content -->
         
