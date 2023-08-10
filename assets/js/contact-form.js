@@ -1,11 +1,13 @@
 /* ---------------------------------------------
  Contact form
  --------------------------------------------- */
-$(document).ready(function(){
-    $("#submit_btn").click(function(){
+
+ function onContactFormSubmit(token){
+// $(document).ready(function(){
+//     $("#submit_btn").click(function(){
         
         //get input field values
-        var user_name = $('input[name=name]').val();
+        var user_name = $('input[name=cf_name]').val();
         var user_email = $('input[name=email]').val();
         var user_message = $('textarea[name=message]').val();
         var honeypot_phone = $('textarea[name=phone]').val();
@@ -14,7 +16,7 @@ $(document).ready(function(){
         //we simply change border color to red if empty field using .css()
         var proceed = true;
         if (user_name == "") {
-            $('input[name=name]').css('border-color', '#e41919');
+            $('input[name=cf_name]').css('border-color', '#e41919');
             proceed = false;
         }
         if (user_email == "") {
@@ -40,6 +42,9 @@ $(document).ready(function(){
                 'message': user_message,
                 'phone' : honeypot_phone
             };
+            headers_data = {
+                'data-action': 'submit'
+            };
 
             // Define the endpoint URL
             var url = 'https://api.formcake.com/api/form/70569fc2-4a57-47b9-a7e3-f987bfab3cd5/submission';
@@ -48,6 +53,7 @@ $(document).ready(function(){
             $.ajax({
                 url: url,
                 type: 'POST',
+                headers: headers_data,
                 data: post_data,
                 dataType: 'json',
                 success: function(response) {
@@ -63,6 +69,8 @@ $(document).ready(function(){
                     //reset values in all input fields
                     $('#contact_form input').val('');
                     $('#contact_form textarea').val('');
+
+                    window.location.href = 'thankyousubscribe.html';
                 }
                 
                 $("#result").hide().html(output).slideDown();
@@ -75,15 +83,16 @@ $(document).ready(function(){
         }
         
         return false;
-    });
+    // });
     
     //reset previously set border colors and hide all message on .keyup()
-    $("#contact_form input, #contact_form textarea").keyup(function(){
-        $("#contact_form input, #contact_form textarea").css('border-color', '');
-        $("#result").slideUp();
-    });
+    // $("#contact_form input, #contact_form textarea").keyup(function(){
+    //     $("#contact_form input, #contact_form textarea").css('border-color', '');
+    //     $("#result").slideUp();
+    // });
     
-});
+// });
+ }
 
 
 function isValidEmail(email) {

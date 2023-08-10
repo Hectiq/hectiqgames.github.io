@@ -1,4 +1,4 @@
-function onSubmit(token) {
+function onNewsletterSubmit(token) {
     console.log('Form submission handler invoked');
     const form = document.getElementById('Newsletter');
     const formData = new FormData(form);
@@ -29,7 +29,7 @@ function onSubmit(token) {
         return response.json();
       })
       .then((jsonResponse) => {
-        alert('Form submitted successfully!');
+        window.location.href = 'thankyousubscribe.html';
       })
       .catch((error) => {
         console.error('Error:', error);

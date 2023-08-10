@@ -8,7 +8,14 @@
 		"prettier.printWidth": 250
 	},
 	"launch": {
+		// 
 		"configurations": [
+			{
+				"name": "Build and Run",
+				"command": "bundle exec jekyll serve --livereload",
+				"request": "launch",
+				"type": "node-terminal",
+			},
 			{
 				"type": "pwa-msedge",
 				"name": "Launch Microsoft Edge",
@@ -48,6 +55,7 @@
 			{
 				"name": "Launch Edge Headless and attach DevTools",
 				"configurations": [
+					"Build and Run",
 					"Launch Microsoft Edge in headless mode",
 					"Open Edge DevTools"
 				]
@@ -55,6 +63,7 @@
 			{
 				"name": "Launch Edge and attach DevTools",
 				"configurations": [
+					"Build and Run",
 					"Launch Microsoft Edge",
 					"Open Edge DevTools"
 				]
