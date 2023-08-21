@@ -21,9 +21,9 @@ layout: default
         
         <!-- Hero Content -->
         <div class="home-content">
-            <embed src='{{ "/assets/pdfs/PingosPitchDeck.pdf" | relative_url }}' type="application/pdf" style="padding-top:4%; width:1920px;height:1080px">
+            <embed src='{{page.pitch}}' type="application/pdf" style="padding-top:4%; width:1920px;height:1080px">
             <!-- Fallback link for non-PDF supported browsers -->
-            <p>If you can't view the PDF, you can <a href='{{ "/assets/pdfs/PingosPitchDeck.pdf" | relative_url }}'>download it here</a>.</p>
+            <p>If you can't view the PDF, you can <a href='{{page.pitch}}'>download it here</a>.</p>
             </embed>
         </div>
         <!-- End Hero Content -->
