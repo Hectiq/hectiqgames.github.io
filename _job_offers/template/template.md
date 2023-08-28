@@ -1,6 +1,7 @@
 ---
 title: Hectiq - Careers - Polyvalent Game Artist
 layout: job_offer
+disable_stick_header: true
 job_title: Polyvalent Game Artist
 job_subtitle: Be a pillar of Hectiq launch 
 job_logo_url: /assets/images/careers/hectiq_job_logo_1.png

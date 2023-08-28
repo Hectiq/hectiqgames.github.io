@@ -1,6 +1,7 @@
 ---
 title: Hectiq - Careers - VFX Artist
 layout: job_offer
+disable_stick_header: true
 job_title: VFX Artist
 job_subtitle: Be a pillar of Hectiq launch 
 job_logo_url: /assets/images/careers/hectiq_job_logo_1.png

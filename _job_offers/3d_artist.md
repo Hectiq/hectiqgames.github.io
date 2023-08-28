@@ -1,6 +1,7 @@
 ---
 title: Hectiq - Careers - 3D Artist
 layout: job_offer
+disable_stick_header: true
 job_title: 3D Artist
 job_subtitle: Be a pillar of Hectiq launch 
 job_logo_url: /assets/images/careers/hectiq_job_logo_1.png

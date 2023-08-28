@@ -6,9 +6,11 @@ layout: default
         
         <!-- Hero Content -->
         <div class="home-content">
-            <embed src='{{page.pitch}}#zoom=FitH' type="application/pdf" style="margin-top:5%; width:1920px;height:1000px">
-                <p>If you can't view the PDF, you can <a href='{{page.pitch}}'>download it here</a>.</p>
-            </embed>
+            <div class="pdf-container">
+                <embed class="pdf-reader" src='{{page.pitch}}#zoom=FitH' type="application/pdf" >
+                    <p>If you can't view the PDF, you can <a href='{{page.pitch}}'>download it here</a>.</p>
+                </embed>
+            </div>
             <!-- Fallback link for non-PDF supported browsers -->
             
         </div>
@@ -19,9 +21,23 @@ layout: default
 
 <style>
     /* CSS for mobile devices with a maximum width of 768px (adjust as needed) */
+    .pdf-container {
+        width: 100%;
+        height: 100%;
+    }
+
+    .pdf-reader {
+        display: block; /* Makes sure it takes up the full width */
+        width: 100%;
+        height: 100vh;
+        border: none; /* Removes any default borders */
+    }
+    /* Adjust the height for mobile devices */
     @media (max-width: 768px) {
         .home-content embed {
-            height: 300px; /* Adjust the height for mobile devices */
+            height: 300px;   
         }
     }
+
+    
 </style>
