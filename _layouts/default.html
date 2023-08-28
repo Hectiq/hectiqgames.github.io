@@ -47,7 +47,9 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
   
         {% include header.html %}
         {{ content }}
+        {% if page.exclude_footer != true %}
         {% include footer.html %}
+        {% endif %}
     </div>
 
           <!-- JS -->
