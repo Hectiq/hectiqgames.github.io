@@ -1,27 +1,12 @@
 ---
 layout: default
 ---
-
-<!-- Home Section -->
-<!-- <section class="home-section bg-dark-alfa-50 parallax-2">
-    <div class="js-height-full"> -->
-        
-        <!-- Hero Content -->
-        <!-- <div class="home-content">
-            <object data='{{ "/assets/pdfs/PingosPitchDeck.pdf" | relative_url }}'  type="application/pdf"></object>
-        </div> -->
-        <!-- End Hero Content -->
-        
-    <!-- </div>
-</section> -->
-<!-- End Home Section -->
-<!-- Home Section -->
 <section class="home-section bg-dark-alfa-50 parallax-2">
     <div class="js-height-full">
         
         <!-- Hero Content -->
         <div class="home-content">
-            <embed src='{{page.pitch}}' type="application/pdf" style="margin-top:5%; width:1920px;height:1080px">
+            <embed src='{{page.pitch}}#zoom=FitH' type="application/pdf" style="margin-top:5%; width:1920px;height:1000px">
                 <p>If you can't view the PDF, you can <a href='{{page.pitch}}'>download it here</a>.</p>
             </embed>
             <!-- Fallback link for non-PDF supported browsers -->
@@ -31,7 +16,6 @@ layout: default
         
     </div>
 </section>
-<!-- End Home Section -->
 
 <style>
     /* CSS for mobile devices with a maximum width of 768px (adjust as needed) */
